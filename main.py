@@ -84,7 +84,7 @@ class Main:
                 if not self.folder_linked and not self.coder_mode: 
                     link, index = self.ui.folder_linked()
                     
-                    if index:  folder_index.Indexing().run(link) 
+                    if index:  folder_index.Indexing(link).run() 
                     elif link: folder_linked.FolderLinked(link)
 
                     self.folder_linked = link
