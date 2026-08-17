@@ -47,8 +47,6 @@ class Main:
                 zero_error = False 
                 save = True
                 while True: 
-                    self.ui.clear() 
-
                     if int_error:  print("[red]integer value only[/red]")
                     if zero_error: print("[red]minimum 1 iteration[/red]")
                     
@@ -112,7 +110,7 @@ class Main:
 
             case "/commands": 
                 txt = f"""[{self.ui.c1}][bold]
-                \nCommands:\n {"/switch_to_local" if self.gen_type == "api" else "/switch_to_api"}\n /link_folder\n /max_iteration\n /model\n /vision_mode\n /coder_mode\n /settings\n /skills\n /telegram\n /reset
+                \nCommands:\n {"/switch_to_local" if self.gen_type == "api" else "/switch_to_api"}\n /link_folder\n /max_iteration\n /model\n /vision_mode\n /coder_mode\n /skills\n /telegram\n /reset
                 [/bold][{self.ui.c1}]"""
                 print(txt)
 
